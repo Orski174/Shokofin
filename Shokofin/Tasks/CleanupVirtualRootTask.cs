@@ -20,7 +20,7 @@ namespace Shokofin.Tasks;
 public class CleanupVirtualRootTask(ILogger<CleanupVirtualRootTask> logger, ILibraryManager libraryManager, IFileSystem fileSystem, MediaFolderConfigurationService configurationService, LibraryScanWatcher scanWatcher) : IScheduledTask, IConfigurableScheduledTask
 {
     /// <inheritdoc />
-    public string Name => "Clean-up Virtual File System Roots";
+    public string Name => "Clean up Virtual File System Roots";
 
     /// <inheritdoc />
     public string Description => "Clean-up any old VFS roots leftover from an outdated install or failed removal of the roots.";
